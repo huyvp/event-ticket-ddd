@@ -1,2 +1,36 @@
 server:
   port: 2020
+
+resilience4j:
+  ratelimiter:
+    instances:
+      backendA:
+        limit-for-period: 10
+        limit-refresh-period: 1s
+        timeout-duration: 0
+        register-health-indicator: true
+        event-consumer-buffer-size: 100
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowType: TIME_BASED
+        minimumNumberOfCalls: 20
+        waitDurationInOpenState: 50s
+        failureRateThreshold: 50
+        eventConsumerBufferSize: 10
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    jmx:
+      exposure:
+        exclude:
+          - "*"
+  endpoint:
+    health:
+      show-details: always
