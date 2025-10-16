@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>starter-module</module>
-        <module>controller-module</module>
-        <module>application-module</module>
-        <module>infrastructure-module</module>
-        <module>domain-module</module>
+        <module>module-starter</module>
+        <module>module-controller</module>
+        <module>module-application</module>
+        <module>module-infrastructure</module>
+        <module>module-domain</module>
     </modules>
 
     <properties>

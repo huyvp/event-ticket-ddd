@@ -1,8 +1,8 @@
 package com.source.infrastructure.persistence.repository;
 
-import com.source.domain.repository.HIDomainRepository;
+import com.source.domain.repository.TicketDetailRepository;
 
-public class HiDomainRepositoryImpl implements HIDomainRepository {
+public class TicketDetailRepositoryImpl implements TicketDetailRepository {
     @Override
     public String sayHi(String name) {
         return "";
