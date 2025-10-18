@@ -1,4 +1,4 @@
-package com.source.infrastructure.config.redis;
+package com.source.infrastructure.cache.redis;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package com.source.infrastructure.config.redis;
+package com.source.infrastructure.cache.redis;
 
 public interface RedisInfrastructureService {
 

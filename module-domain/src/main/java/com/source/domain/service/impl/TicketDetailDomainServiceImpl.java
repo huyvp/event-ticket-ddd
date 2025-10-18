@@ -1,6 +1,7 @@
-package com.source.domain.service;
+package com.source.domain.service.impl;
 
 import com.source.domain.model.entity.TicketDetail;
+import com.source.domain.service.TicketDetailDomainService;
 
 public class TicketDetailDomainServiceImpl implements TicketDetailDomainService {
     @Override

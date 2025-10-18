@@ -34,3 +34,30 @@ management:
   endpoint:
     health:
       show-details: always
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:1433/vetautet
+    username: root
+    password: root1234
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 20  # Số lượng tối đa kết nối
+      minimum-idle: 5        # Số lượng kết nối tối thiểu trong pool
+  jpa:
+    database: sql_server
+    hibernate:
+      ddl-auto: none
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: ""
+      connect-timeout: 3000
+      lettuce:
+        pool:             # Connection pool settings
+          max-active: 10  # Maximum number of active connections in the pool (uses -1 for no limit)
+          max-idle: 5     # Maximum number of idle connections in the pool
+          min-idle: 5     # Minimum number of idle connections in the pool
+          #max-wait: -1ms # Maximum wait time to get a connection from the pool (uses -1 for no limit)
