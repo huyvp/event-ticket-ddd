@@ -5,9 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b4677a4-bdb7-445a-a797-c44c136950d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/deployment/mssql/init/ticket_init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-application/src/main/java/com/source/application/service/ticket/cache/TicketDetailCacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-application/src/main/java/com/source/application/service/ticket/cache/TicketDetailCacheServiceRefactor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-controller/src/main/java/com/source/controller/resource/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-controller/src/main/java/com/source/controller/resource/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-controller/src/main/java/com/source/controller/utils/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-controller/src/main/java/com/source/controller/utils/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/docker-compose-broker-kafka.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose-broker-kafka.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/docker-compose-nginx.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose-nginx.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/elk/elasticsearch.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/elk/elasticsearch.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/elk/kibana.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/elk/kibana.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/elk/logstash.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/elk/logstash.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/elk/pipeline/logstash.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/elk/pipeline/logstash.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/mysql/init/ticket_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/mysql/init/ticket_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/mysqld-exporter/.my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/mysqld-exporter/.my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/src/main/java/com/source/application/service/ticket/impl/TicketDetailAppServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-application/src/main/java/com/source/application/service/ticket/impl/TicketDetailAppServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/model/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/model/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/model/entity/TicketDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/model/entity/TicketDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/service/impl/TicketDetailDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/source/domain/service/impl/TicketDetailDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/distributed/redison/RedissonDistributedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/distributed/redison/RedisDistributedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/distributed/redison/impl/RedisDistributedLockerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/distributed/redison/impl/RedisDistributedLockerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/mapper/TicketDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/mapper/TicketDetailJPAlMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/repository/TicketDetailRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-infrastructure/src/main/java/com/source/infrastructure/persistence/repository/TicketDetailRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/module-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="34EWxbuRCxngJ91AcZv60nTUqES" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -51,6 +73,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,7 +125,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760779458163</updated>
-      <workItem from="1760779459287" duration="12394000" />
+      <workItem from="1760779459287" duration="13048000" />
+      <workItem from="1760855118239" duration="11039000" />
     </task>
     <servers />
   </component>
